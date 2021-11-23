@@ -14,10 +14,7 @@ $("#submit").on("click", function () {
                 const render = new Renderer(dataAboutTeams);
                 console.log(dataAboutTeams)
                 render.renderResults();
-                // $(".RecipesList").empty();
-    
-                // var newHTML = template(dataAboutTeams);
-                // $('.RecipesList').append(newHTML);
+
                 }, 500);
             ;}
       });

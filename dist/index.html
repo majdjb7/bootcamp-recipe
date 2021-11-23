@@ -24,18 +24,17 @@
     <script id="ingredients-template" type="text/x-handlebars-template">
         <div class="dataDiv">
             {{#each recipes}}
-                <!-- {{#each ingredients}}
-                    <p id="item"></p>
-                {{/each}} -->
+
 
             <div class="mealDiv">
-                <p id="title">{{ title }}</p>
-                <!-- <p id="jersey">{{ jersey }}</p> -->
+                <a href="{{href}}" id="title">{{ title }}</a>
 
-                <div>
-                    <img  id="photoHolder" src="{{thumbnail}}" alt="No Relevant Photo Found">
+                <div class="photoHolder">
+                    <img src="{{thumbnail}}" alt="No Relevant Photo Found">
                 </div>
-                <!-- <p id="position">{{ position }}</p> -->
+                {{#each ingredients}}
+                    <p id="item">{{ this }}</p>
+                {{/each}}
             </div>
             {{/each}}
         </div>
