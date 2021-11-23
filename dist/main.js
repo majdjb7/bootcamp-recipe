@@ -20,7 +20,6 @@ $("#submit").on("click", function () {
 
 $(document).on('click','.imageClick',function() {
     let relevantInputValue = $(this).closest(".mealDiv").find("li")[0].innerHTML;
-    alert(relevantInputValue)
-    console.log(relevantInputValue)
+    alert(`THIS is the first ingredient: ${relevantInputValue}`)
 
 })
