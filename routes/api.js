@@ -23,8 +23,8 @@ router.get('/recipes/:ingredient', function (request, response) {
     const ingredient = request.params.ingredient
     
     urllib.request(`https://recipes-goodness.herokuapp.com/recipes/${ingredient}`, function (err, data, res) {
-        const teamData = data.toString()
-        const jsonData = JSON.parse(teamData)
+        const recipeData = data.toString()
+        const jsonData = JSON.parse(recipeData)
 
         const resultsNeeded = jsonData.results.map((item) => {
             return {

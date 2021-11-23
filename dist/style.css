@@ -7,15 +7,17 @@
     height: 43px;
 }
 
-#ingredient {
-    text-align: left;
-    width: 90%;
+.title {
+  text-align: left;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0;
 }
 
-#submit {
-    /* width: 10%; */
-
-} 
+#ingredient {
+    text-align: left;
+    width: 20%;
+}
 
 .dataDiv {
   background-color: lightgray;
@@ -27,15 +29,18 @@
 
 .mealDiv {
   display: grid;
-  /* height: 100px; */
-  /* width: 100%; */
+  position: relative;
   background-color: orange;
   text-align: center;
-  align-content: center;
   border-radius: 4px; 
 
 }
 
-#photoHolder {
-  background-color:	#BEBEBE;
+
+
+.image {
+  
+  height: 200px;
+  width: 300px;
+  margin: 20px;
 }
