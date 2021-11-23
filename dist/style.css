@@ -1,0 +1,41 @@
+#header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 43px;
+}
+
+#ingredient {
+    text-align: left;
+    width: 90%;
+}
+
+#submit {
+    /* width: 10%; */
+
+} 
+
+.dataDiv {
+  background-color: lightgray;
+  text-align: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mealDiv {
+  display: grid;
+  /* height: 100px; */
+  /* width: 100%; */
+  background-color: orange;
+  text-align: center;
+  align-content: center;
+  border-radius: 4px; 
+
+}
+
+#photoHolder {
+  background-color:	#BEBEBE;
+}
